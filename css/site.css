@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-image: url('../img/back.webp'); /* Relative path to the image */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.key {
+    color: blue;
+}
+
+.brick {
+    position: absolute;
+    border-radius: 5px;
+}
+
+.ball {
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.paddle {
+    position: absolute;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.row1, .row2 {
+    background-color: blueviolet;
+}
+
+.row3, .row4 {
+    background-color: orange;
+}
+
+.row5, .row6 {
+    background-color: palevioletred;
+}
+
+#score, #level, #lives {
+    position: absolute;
+    padding: 1em;
+    font-size: 2em;
+}
+
+#score {
+    left: 0;
+    top: 0;
+    color: yellow;
+}
+
+#level {
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 20%;
+    margin: auto;
+    color: yellow;
+    text-align: center;
+}
+.life-heart {
+    width: 60px; /* or any other size */
+    height: auto;
+    margin-right: 5px;
+}
+#lives {
+    right: 0;
+    top: 0;
+    color: red;
+    text-align: right;
+}
+
+#info {
+    z-index: 1000;
+    position: absolute;
+    visibility: hidden;
+    left: 25%;
+    top: 25%;
+    right: 25%;
+    background-color: black;
+    border: 2px solid purple;
+    color: yellow;
+    text-align: center;
+}
+.selected {
+    background-color: orangered; /* Highlight background color */
+    color: yellow; /* Highlight text color */
+    padding: 0.5em;
+    margin: 0.5em 0; /* Add some space around each option */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+#info h1, #info h2 {
+    padding: 1em;
+}
+
+#info p {
+    padding: 0.5em;
+    margin: 0.5em 0; /* Ensure consistent spacing for all options */
+}#how-to-play {
+     position: absolute;
+     bottom: 5%; /* Adjust based on your layout */
+     left: 25%;
+     right: 25%;
+     background-color: #0008; /* Semi-transparent black */
+     border: 2px solid purple;
+     color: yellow;
+     padding: 1em;
+     border-radius: 5px;
+     text-align: center;
+ }
+
+#how-to-play h2 {
+    margin-bottom: 0.5em;
+}
+
+#how-to-play p {
+    margin-top: 0.5em;
+}
